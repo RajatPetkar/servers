@@ -29,7 +29,7 @@ app.post('/room', (req, res) => {
 });
 
 
-server.listen(process.env.PORT || 3000, () => console.log('Server running on port 3000'));
+server.listen(process.env.PORT || 3000, () => console.log(`Server running on port ${PORT}`));
 
 io.on('connection', socket => {
   console.log('New socket connection:', socket.id);
