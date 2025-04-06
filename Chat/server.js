@@ -16,7 +16,7 @@ app.get('/rooms', (req, res) => {
 });
 app.post("/",(req,res)=>{
   return "<h1>Hello</h1>";
-}
+});
 app.post('/room', (req, res) => {
   const roomName = req.body.room;
   if (!roomName) {
