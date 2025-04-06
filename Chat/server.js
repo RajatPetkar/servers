@@ -14,8 +14,8 @@ const rooms = {};
 app.get('/rooms', (req, res) => {
   return res.json(rooms);
 });
-app.post("/",(req,res)=>{
-  return "<h1>Hello</h1>";
+app.get("/", (req, res) => {
+  res.send("This is an API by Rajat");
 });
 app.post('/room', (req, res) => {
   const roomName = req.body.room;
