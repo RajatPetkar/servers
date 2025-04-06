@@ -31,7 +31,7 @@ app.post('/room', (req, res) => {
 });
 
 
-server.listen(process.env.PORT || 3000, () => console.log(`Server running on port ${PORT}`));
+server.listen(process.env.PORT || 3000, () => console.log(`Server running on port`));
 
 io.on('connection', socket => {
   console.log('New socket connection:', socket.id);
